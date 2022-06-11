@@ -1,0 +1,203 @@
+@keyframes rippleAnim {
+    from {
+        box-shadow: 0px 0px 0px 0px #ffffff99, 0px 0px 0px 0px #ffffff99, 0px 0px 0px 0px #ffffff99;
+    }
+
+    to {
+        box-shadow: 0px 0px 0px 20px #ffffff99, 0px 0px 0px 50px #ffffff99, 0px 0px 0px 70px #ffffff99;
+    }
+}
+
+@keyframes spspin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#sp-workshop {
+    position: relative;
+
+    .virtual-tour {
+        &::before {
+            content: "";
+            position: absolute;
+            width: 1106px;
+            height: 100%;
+            background: rgba(183, 27, 28, 0.80);
+            right: 50%;
+            top: 0;
+            z-index: -1;
+            transform: skewX(-10deg);
+            z-index: -1;
+
+        }
+
+        .workshop-logo {
+            margin-bottom: 62px;
+        }
+
+        .section-title {
+            margin-bottom: 30px;
+
+            h2 {
+                color: $whiteColor;
+                text-transform: uppercase;
+                margin-bottom: 13px;
+            }
+
+            p {
+                color: $whiteColor;
+            }
+        }
+
+        .workshop-btn {
+            .primary-btn {
+                padding: 0px 62px 0px 27px;
+                height: 60px;
+                line-height: 56px;
+                transition: $titleColor2;
+                border: 2px solid $whiteColor;
+
+                &:hover {
+                    background: transparent;
+                    color: $whiteColor;
+                    border: 2px solid $whiteColor;
+                }
+
+                i {
+                    font-size: 27px;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+
+    .video-experience {
+        &::before {
+            content: "";
+            position: absolute;
+            width: 1106px;
+            height: 100%;
+            background: rgba(48, 48, 48, 0.8);
+            left: 50%;
+            top: 0;
+            z-index: -1;
+            transform: skewX(-10deg);
+            z-index: -1;
+        }
+
+        .experience-title {
+            h2 {
+                text-align: end;
+                text-transform: uppercase;
+                color: $whiteColor;
+                font-size: 48px;
+                line-height: 61px;
+                letter-spacing: 2px;
+                font-family: $titleFont;
+                font-weight: 700;
+                position: relative;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 18px;
+                    left: 35px;
+                    width: 46px;
+                    height: 7px;
+                    background: $whiteColor;
+                }
+            }
+        }
+
+        .video-inner {
+            position: relative;
+            text-align: center;
+
+            .video-thumb {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+
+                img {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    border-radius: 100%;
+                }
+
+                a {
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    display: block;
+                    transform: translate(-50%, -50%);
+
+                    &.video-icon {
+                        width: 100px;
+                        height: 100px;
+                        line-height: 110px;
+                        border-radius: 50%;
+                        background: $majorColor;
+                        font-size: 40px;
+                        text-align: center;
+                        display: block;
+                        margin: 0 auto;
+                        color: #ffffff;
+                    }
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100px;
+                        height: 100px;
+                        border-radius: 50%;
+                        box-shadow: 0px 0px 0px 0px #ffffff99, 0px 0px 0px 0px #ffffff99, 0px 0px 0px 0px #ffffff99;
+                        z-index: -1;
+                        animation-name: rippleAnim;
+                        animation-duration: 3s;
+                        animation-timing-function: linear;
+                        animation-iteration-count: infinite;
+
+                        // z-index: 999;
+                        // animation: rippleAnim 3s linear infinite;
+                        // background: red;
+
+                        // content: "";
+                        // position: absolute;
+                        // top: 0;
+                        // left: 0;
+                        // width: 100px;
+                        // height: 100px;
+                        // border-radius: 50%;
+                        // box-shadow: 0px 0px 0px 0px rgba(255, 0, 0, 0.4);
+
+                        //box-shadow: 0px 0px 0px 0px fade-out($majorColor, 0.6), 0px 0px 0px 0px fade-out($majorColor, 0.6), 0px 0px 0px 0px fade-out($majorColor, 0.6),0px 0px 0px 0px fade-out($majorColor, 0.6);
+
+                        // animation-name: rippleAnim;
+                        // animation-duration: 3s;
+                        // animation-timing-function: linear;
+                        // animation-iteration-count: infinite;
+                        //box-shadow: -10px 10px 10px magenta;
+                    }
+                }
+            }
+
+            .video-circle {
+                img {
+                    transform: rotate(0deg);
+                    animation: spspin 8s linear infinite;
+                }
+            }
+        }
+    }
+}

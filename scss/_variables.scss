@@ -1,0 +1,30 @@
+
+// Font Family
+$bodyFont: 'Poppins', sans-serif;
+$titleFont: 'Rajdhani', sans-serif;
+$titleFont1: 'Roboto Condensed', sans-serif;
+
+// Colors
+$majorColor:    #B71B1C;
+$textColor:     #303030;
+$titleColor1:   #B71B1C;
+$titleColor2:   #303030;
+$whiteColor:    #ffffff;
+$grayColor:     #F0F5FE;
+
+// Global
+$transition1: all 0.2s ease;
+$transition2: all 0.3s ease;
+
+// Responsive
+$xxl: 'only screen and (max-width: 1600px)';
+$xl : 'only screen and (max-width: 1399px)';
+$lg : 'only screen and (max-width: 1199px)';
+$md : 'only screen and (max-width: 991px)';
+$sm1: 'only screen and (max-width: 767px)';
+$sm2: 'only screen and (max-width: 667px)';
+$sm3: 'only screen and (max-width: 575px)';
+$xs1: 'only screen and (max-width: 480px)';
+$xs2: 'only screen and (max-width: 414px)';
+$xs3: 'only screen and (max-width: 375px)';
+$xs4: 'only screen and (max-width: 320px)';

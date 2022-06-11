@@ -1,0 +1,387 @@
+#topbar {
+    background: #ffffff;
+    padding: 10px;
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .top-img {
+            img {
+                max-width: 150px;
+            }
+        }
+
+        .top-bell {
+            a {
+                i {
+                    color: #000000;
+                    font-size: 22px;
+                    transform: rotate(30deg);
+                }
+            }
+        }
+    }
+
+}
+
+#payment-bar {
+    background: hsla(0, 69%, 30%, 0.98);
+    padding: 15px 0 30px 0;
+    position: relative;
+    z-index: 1;
+
+    .bar-item {
+        transform: scale(1);
+        transition: all 0.3s ease;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    .pay {
+
+        i {
+            color: #000000;
+            width: 60px;
+            height: 60px;
+            line-height: 60px;
+            background: #dee2e6;
+            font-size: 25px;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+        }
+
+        span {
+            display: block;
+            color: #ffffff;
+        }
+
+        &:hover {
+            i {
+                color: hsla(0, 69%, 30%, 0.98);
+            }
+        }
+    }
+
+    .button-group {
+        padding: 10px;
+        background: #ffffff;
+        box-shadow: 0px 3px 6px 0px hsla(0, 0%, 0%, 0.322);
+        position: absolute;
+        width: 100%;
+        bottom: -45%;
+
+        .btn {
+            button {
+                border: none;
+                outline: none;
+                box-shadow: none;
+                transition: all 0.3s ease;
+                font-size: 16px;
+                text-transform: capitalize;
+                color: hsla(0, 69%, 30%, 0.98);
+                background: hsl(0, 12%, 94%);
+                border: 1px solid hsla(0, 69%, 30%, 0.98);
+
+                &:focus {
+                    border: none;
+                    outline: none;
+                    box-shadow: none;
+                }
+
+                &:hover {
+                    background: hsla(0, 69%, 30%, 0.98);
+                    color: #ffffff;
+                }
+            }
+        }
+
+        .btn2 {
+            button {
+                background: hsla(0, 69%, 30%, 0.98);
+                color: #ffffff;
+                transition: all 0.3s ease;
+                border: 1px solid transparent;
+
+                &:hover {
+                    background: hsl(0, 12%, 94%);
+                    color: hsla(0, 69%, 30%, 0.98);
+                    border: 1px solid hsla(0, 69%, 30%, 0.98);
+                }
+            }
+
+        }
+    }
+}
+
+#middle-bar {
+    background: #ffffff;
+    width: 100%;
+    padding-bottom: 50px;
+
+    .middle-item {
+        a {
+            padding: 10px;
+            margin-bottom: 10px;
+            background: #ffffff;
+            display: block;
+            transition: all 0.3s ease;
+
+            i {
+                width: 100px;
+                height: 100px;
+                line-height: 100px;
+                font-size: 50px;
+                background: #f2eeee;
+                color: #000000;
+                display: inline-block;
+                border-radius: 100%;
+                transition: all 0.3s ease;
+            }
+
+            span {
+                display: block;
+                font-size: 18px;
+                color: #000000;
+                margin-top: 5px;
+                text-transform: capitalize;
+                transition: all 0.3s ease;
+            }
+
+        }
+
+        &:hover {
+            a {
+                box-shadow: 0px 3px 6px 0px hsla(0, 0%, 0%, 0.322);
+
+                i {
+                    color: rgb(174, 13, 13);
+                }
+
+                span {
+                    color: rgb(174, 13, 13);
+                }
+            }
+
+        }
+    }
+}
+
+#top-detils {
+    padding: 0px 0 30px;
+
+    .section-title {
+        h2 {
+            text-transform: capitalize;
+        }
+    }
+
+}
+
+footer {
+    .footer-area {
+        padding: 20px;
+        background: #d0cecee6;
+
+        .footer-box {
+            a {
+                transition: all 0.3s ease;
+
+                i {
+                    font-size: 30px;
+                    color: #000000;
+                    transition: all 0.3s ease;
+
+
+                }
+
+                h2 {
+                    font-size: 16px;
+                    padding-top: 5px;
+                    font-weight: 600;
+                    text-transform: capitalize;
+                    color: #000000 !important;
+                    display: block;
+                    transition: all 0.3s ease;
+                    cursor: pointer;
+
+                }
+
+                &:hover {
+                    i {
+                        color: rgb(174, 13, 13);
+                    }
+
+                    h2 {
+                        color: rgb(174, 13, 13) !important;
+                    }
+                }
+
+
+            }
+
+
+        }
+
+
+    }
+}
+
+//.................addmony-top...........................
+#addmony-top {
+    background: #ffffff;
+    padding: 20px 0;
+
+    .top-left-icon {
+        li {
+            list-style: none;
+
+            a {
+                display: inline-block;
+                padding: 10px;
+                transition: all 0.3s ease;
+
+                &:hover {
+                    i {
+                        color: rgb(174, 13, 13);
+                    }
+
+                }
+
+
+                i {
+                    font-size: 32px;
+                    color: #000000;
+
+                }
+            }
+        }
+
+    }
+
+    .top-right-icon {
+        ul {
+            li {
+                a {
+                    display: inline-block;
+                    padding: 10px;
+                    transition: all 0.3s ease;
+
+                    &:hover {
+                        i {
+                            color: rgb(174, 13, 13);
+                        }
+
+                    }
+
+                    i {
+                        font-size: 32px;
+                        color: #000000;
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//....................prottoyon............................
+#prottoyon {
+    .prottoyon-logo {
+        a {
+            img {}
+        }
+
+        h6 {
+            font-size: 22px;
+            color: #000000;
+            font-weight: 500;
+            text-transform: capitalize;
+        }
+    }
+
+    .prottoyon-items {
+        margin-top: 20px;
+
+        ul {
+            li {
+                margin-right: 10px;
+
+                a {
+                    i {
+                        width: 60px;
+                        height: 60px;
+                        line-height: 60px;
+                        background: #e9ecef;
+                        text-align: center;
+                        font-size: 26px;
+                        border-radius: 100%;
+                        margin-bottom: 10px;
+                        color: #000000;
+                        transition: all 0.3s ease;
+
+                    }
+
+                    span {
+                        font-size: 18px;
+                        color: #000000;
+                        text-transform: capitalize;
+                        transition: all 0.3s ease;
+
+                    }
+                }
+
+                &:last-child {
+                    margin-right: 0px;
+                }
+
+                &:hover {
+                    a {
+                        i {
+                            color: #ffffff;
+                            background: rgb(174, 13, 13);
+                        }
+
+                        span {
+                            color: rgb(174, 13, 13);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//.....................add-isotop...........................
+#add-isotop {
+    padding: 50px 0;
+
+    #product-filter-nav {
+        button {
+            width: 130px;
+            border: none;
+            padding: 5px 0;
+            background: rgb(174, 13, 13);
+            color: #ffffff;
+            text-transform: capitalize;
+
+            &.active {
+                background: #187149;
+            }
+        }
+
+
+    }
+
+    #product-filter-content {
+        margin: 28px 0;
+
+        .product-filter-item {
+            border: none;
+        }
+
+    }
+}

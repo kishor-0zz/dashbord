@@ -1,0 +1,53 @@
+@media only screen and (max-width: 767px) {
+   #payment-bar .button-group {
+      width: 90% !important;
+
+      .btn {
+         button {
+            font-size: 14px;
+         }
+      }
+   }
+
+   .middle-item {
+      padding-left: 5px !important;
+      padding-right: 5px !important;
+
+      img {
+         width: 100% !important;
+      }
+
+      span {
+         font-size: 12px !important;
+      }
+
+      a {
+         padding: 0 !important;
+      }
+
+   }
+
+   #middle-bar .middle-item a i {
+      width: 50px;
+      height: 50px;
+      line-height: 50px;
+      font-size: 28px;
+   }
+
+   .section-title h2 {
+      font-size: 30px !important;
+   }
+
+   section#middle-bar {
+      padding-bottom: 30px !important;
+   }
+
+   #add-isotop #product-filter-nav button {
+      width: 100% !important;
+   }
+
+   div#product-filter-nav {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+   }
+}

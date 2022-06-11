@@ -1,0 +1,70 @@
+#sp-menubar{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.85);
+    transition: all 0.3s ease;
+    backdrop-filter: blur(12px);
+    #sp-megamenu{
+        .main-menu{
+            .navbar{
+                .menu-item{
+                    .dropdown-inner{
+                        top: 90px;
+                    }
+                }
+                .menu-item{
+                    position: relative;
+                    &.active{
+                        &::before{
+                            content: "";
+                            position: absolute;
+                            width: 50px;
+                            height: 2px;
+                            background: #B71B1C;
+                            bottom: 25px;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            margin: 0;
+                            border-radius: 10px;
+                            transition: $transition2;
+                        }
+                    }
+                //    &.btn-outline{
+                //        &::before{
+                //            display: none;
+                //        }
+                //    }
+                //    &:hover{
+                //     &::before{
+                //         width: 50px;
+                //    }
+                //    }
+                  
+                    .main-item{
+                    &::before{
+                        content: "";
+                        position: absolute;
+                        width: 0;
+                        height: 2px;
+                        background: #B71B1C;
+                        bottom: 25px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        margin: 0;
+                        border-radius: 10px;
+                        transition: $transition2;
+                        }
+                        &:hover{
+                            &::before{
+                                width: 50px;
+                            }
+                        }
+                    }
+                      
+                }  
+            }
+        }
+    }
+}

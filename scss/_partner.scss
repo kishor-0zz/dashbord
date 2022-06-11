@@ -1,0 +1,30 @@
+#sp-partner {
+    background: $whiteColor;
+
+    .partner-item {
+        max-width: 300px;
+        margin: 0 auto 50px;
+        padding: 25px;
+        background-image: url(assets/partner-bg.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+        .item-img {
+            width: 145px;
+            height: 145px;
+            margin: 0 auto;
+            background: $whiteColor;
+            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
+            transition: $transition2;
+
+            &:hover {
+                box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.25);
+            }
+
+            img {
+                padding: 5px;
+            }
+        }
+    }
+}

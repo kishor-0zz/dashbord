@@ -1,0 +1,132 @@
+/* 01. Basic Typography
+-------------------------------------*/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: $bodyFont;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 180%;
+    color: $textColor;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+p {
+    font-family: $bodyFont;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 180%;
+    color: $textColor;
+    margin-bottom: 15px;
+}
+
+
+
+ul {
+    margin: 0px 0px 0px 15px;
+    padding: 0px;
+    list-style: none;
+
+    li {
+        font-size: 15px;
+        font-weight: normal;
+        line-height: 180%;
+        list-style: none;
+        display: inline-block;
+    }
+}
+
+a {
+    color: $textColor;
+    text-decoration: none;
+    -webkit-transition: $transition1;
+    -moz-transition: $transition1;
+    -ms-transition: $transition1;
+    -o-transition: $transition1;
+    transition: $transition1;
+    outline: none;
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: $majorColor;
+        text-decoration: none;
+        outline: none;
+    }
+}
+
+section {
+    position: relative;
+    padding: 100px 0px;
+}
+
+.section-title {
+    margin-bottom: 40px;
+
+    h2 {
+        font-size: 48px;
+        font-weight: 700;
+        font-family: $titleFont;
+        font-style: normal;
+        letter-spacing: 2px;
+        color: $majorColor;
+        margin-bottom: 18px;
+    }
+
+    h3 {
+        font-size: 30px;
+        color: $titleColor2;
+        letter-spacing: 2px;
+        line-height: 35px;
+        font-family: $titleFont1;
+        text-transform: capitalize;
+    }
+
+    p {
+        font-size: 22px;
+        font-weight: 400;
+        font-family: $bodyFont;
+        line-height: 33px;
+        text-transform: capitalize;
+        font-style: normal;
+
+    }
+}
+
+.primary-btn {
+    height: 48px;
+    line-height: 42px;
+    margin: 0;
+    font-style: normal;
+    padding: 0 46px 0px 20px;
+    font-family: "Poppins", sans-serif;
+    color: #B71B1C;
+    font-size: 18px;
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: 500;
+    background: #fff;
+    display: inline-block;
+    border: 2px solid #B71B1C;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    position: relative;
+
+    i {
+        font-size: 25px;
+        margin-left: 5px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    &:hover {
+        background: $majorColor;
+        color: $whiteColor;
+    }
+}

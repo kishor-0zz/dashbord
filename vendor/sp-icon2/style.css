@@ -1,0 +1,45 @@
+@font-face {
+  font-family: 'sp-icon2';
+  src:  url('fonts/sp-icon2.eot?49hglt');
+  src:  url('fonts/sp-icon2.eot?49hglt#iefix') format('embedded-opentype'),
+    url('fonts/sp-icon2.ttf?49hglt') format('truetype'),
+    url('fonts/sp-icon2.woff?49hglt') format('woff'),
+    url('fonts/sp-icon2.svg?49hglt#sp-icon2') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="sp-icon-"], [class*=" sp-icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'sp-icon2' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.sp-icon-instagram:before {
+  content: "\e800";
+}
+.sp-icon-play-button:before {
+  content: "\e801";
+}
+.sp-icon-skew-arraw:before {
+  content: "\e802";
+}
+.sp-icon-clock:before {
+  content: "\e803";
+}
+.sp-icon-quality:before {
+  content: "\e804";
+}
+.sp-icon-price:before {
+  content: "\e805";
+}
